@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/rhel7/rhel
+FROM registry.access.redhat.com/ubi7/ubi
 
 RUN tum install -y httpd php \
   && yum clean all
