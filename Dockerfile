@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi7/ubi
 
-RUN tum install -y httpd php \
+RUN yum install -y httpd php \
   && yum clean all
   
 ADD index.php /var/www/html
